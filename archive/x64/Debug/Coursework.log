@@ -1,0 +1,6 @@
+﻿  Coursework.cpp
+  Maze.cpp
+C:\Users\SamHo\OneDrive\Documents\Visual Studio 2019\Projects\Coursework 1 CSC8501\Coursework\Maze.cpp(57,31): warning C4101: 'e': unreferenced local variable
+C:\Users\SamHo\OneDrive\Documents\Visual Studio 2019\Projects\Coursework 1 CSC8501\Coursework\Maze.cpp(332,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Coursework.vcxproj -> C:\Users\SamHo\OneDrive\Documents\Visual Studio 2019\Projects\Coursework 1 CSC8501\Coursework\x64\Debug\Coursework.exe
