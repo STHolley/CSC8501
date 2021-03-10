@@ -1,24 +1,36 @@
-Coursework.exe is the main executable for the project.
-No other files are required unless using external .txt files for custom imported mazes.
-Coursework.cpp contains the main function.
-Maze.h & Maze.cpp contain the rest of the code for generating, solving, and playing.
+Title of work: 
+ CSC8501 Maze Generation
+ Creation period:
+ September 2020-October 2020 (4 weeks total)
 
-Code was written and compiled in VS19 and the solution / binaries can be found in the archive folder in this directory.
-Coursework.sln is the solution to this project.
+-------------------------------------------------- ---------------------------
+ Please fill in the development environment of the program work
+ What was the development environment used for your program?
+-------------------------------------------------- ---------------------------
+-OS name and version that have been confirmed to work
+  Used OS
+  　Windows 10 64 bit
 
-The tick sheet is also in this root directory
+-Version of the development environment used for development
+  Used Development Environment
+  　Microsoft Visual Studio Community 2019 Version 16.7.6
 
-This solution covers both CW1 and CW2. 'Legacy' code for CW1 is still left in and can be used.
-The only file difference being the centre cell being labeled 'F' instead of 'S'.
+-------------------------------------------------- ---------------------------
+ Why did you decide to make that program?
+ Why did you create this program?
+-------------------------------------------------- ---------------------------
+This project was developed as a solution for the module CSC8501 for Newcastle University. 
 
-Maze must be generated before adding exits. Exits will always have a path to the centre cell.
-Partial completion of the player A* will never occur due to this.
+-------------------------------------------------- ---------------------------
+ What did you pay attention to when creating the program?
+ What were you careful about?
+-------------------------------------------------- ---------------------------
+The main focus on the program was execution speed/time and memory management. 
+The source code relies on the ommitance of IF statements to reduce overall execution time with regards to machine code compilation and execution around the use of IF statements.
 
-Adding an exit places one in a viable location, I.e.: follows the grid lines.
-There are (width-2)+(height-2) possible exit locations because of this. 1 less if the axis is odd.
-
-testMaze.txt has been added to load a 50x50 maze with 20 exits.
-'.txt' is not necessary when opening a file. It will be appended automatically if missing.
-Files will save as a default "maze.txt" if no file name is provided.
-Files can be opened from any directory if stated.
-Files can also be saved to any directory if stated.
+-------------------------------------------------- ---------------------------
+ What was the difficulty in creating the program?
+ What did you find difficult?
+-------------------------------------------------- ---------------------------
+Since the solution required a maze to be generated, with multiple 'enterances' and 'exits', I needed to adapt Prim's Algorithm (Maze generation) to account for this.
+To do so, I used a 'boring' technique to break down walls where a solution was not found, to make way for a possible solution. This solution provides a relatively cost efficient method for opening and expanding a maze to give multiple exits, without detracting anything from the maze quality provided by Prim's Algorithm.
